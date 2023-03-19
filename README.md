@@ -14,12 +14,26 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 ```sh
 npm init --y (instan installer)
 ```
-
 ```sh
 npm install
 ```
 ```sh
 npm install <name-packed>
+```
+## Install Tailwind 
+```sh
+npm install vue-tailwind --save
+```
+## Configure Vue to use vue-tailwind
+```sh
+import Vue from 'vue'
+import VueTailwind from 'vue-tailwind'
+
+const components = {
+  //...
+}
+
+Vue.use(VueTailwind, components)
 ```
 
 ### Compile and Hot-Reload for Development
